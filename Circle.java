@@ -1,28 +1,22 @@
 package shape;
-/*compute their area and perimeter (circumference) via proper inheritance*/
 
-public class Circle extends Ellipse{
-   private double radius,area;
+ public class Circle extends Ellipse{
+   private double radius;
    
    private Circle(){
+      super(0.0,0.0);
       this.radius=0;
-       this.area=0;
    }
    public Circle(double radius){
-   this.radius=radius;
+       super(radius,radius);
    }
-   public double areaCircle(double radius){
-   area=Math.PI*radius;
+    public String toString(){
+      return "The area of the Circle is " +getArea() +"\nThe circumference of the Circle is " +getPerimeter();
+   }
+   //just to check will delete later
+   public static void main(String[] args){
+      Circle circle = new Circle(5);
+      System.out.println(circle.toString()); 
    }
    
-
-
-
-
-
-
-// human readable toString method detailing their properties. 
-
-//equals method,must be able to compare any TwoDimensionalShape 
-//to see if their areas are equal.
 }
