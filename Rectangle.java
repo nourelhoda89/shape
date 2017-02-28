@@ -22,8 +22,12 @@ public class Rectangle extends TwoDimensionalShape{
    
 // human readable toString method detailing their properties.
    public String toString(){
-      return "The area of the rectangle is " +getArea() +"\nThe perimeter of the rectangle is "+getPerimeter();
-   
+      return "The area of the rectangle is " +getArea() +"\nThe perimeter of the rectangle is "+getPerimeter();  
+   }
+//equals method,must be able to compare any TwoDimensionalShape 
+//to see if their getAreas are equal
+   public boolean equals(){
+      return false;
    }
    //just to check will delete later
    public static void main(String[] args){
