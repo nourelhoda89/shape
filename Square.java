@@ -1,4 +1,4 @@
 package shape;
 
-public class Square{
+public class Square extends TwoDimensionalShape{
 }

@@ -1,4 +1,4 @@
 package shape;
 
-public class RightTriangle{
+public class RightTriangle extends TwoDimensionalShape{
 }

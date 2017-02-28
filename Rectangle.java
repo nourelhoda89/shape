@@ -1,4 +1,4 @@
 package shape;
 
-public class Rectangle{
+public class Rectangle extends TwoDimensionalShape{
 }

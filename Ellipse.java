@@ -1,4 +1,4 @@
 package shape;
 
-public class Ellipse{
+public class Ellipse extends TwoDimensionalShape{
 }
