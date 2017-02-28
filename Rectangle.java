@@ -12,17 +12,17 @@ public class Rectangle extends TwoDimensionalShape{
       this.height=height;
       this.width=width;
    }
-   public double area(){
+   public double getArea(){
       return height*width;
    
    }
-   public double perimeter(){
+   public double getPerimeter(){
       return 2*height+2*width;
    }
    
 // human readable toString method detailing their properties.
    public String toString(){
-      return "The area of the rectangle is " +area() +" and the perimeter of the rectangle is "+perimeter();
+      return "The area of the rectangle is " +getArea() +"\nThe perimeter of the rectangle is "+getPerimeter();
    
    }
    //just to check will delete later
