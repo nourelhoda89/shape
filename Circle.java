@@ -1,7 +1,7 @@
 package shape;
 /*compute their area and perimeter (circumference) via proper inheritance*/
 
-public class Circle extends TwoDimensionalShape{
+public class Circle extends Ellipse{
    private double radius,area;
    
    private Circle(){
