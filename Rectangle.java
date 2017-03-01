@@ -5,6 +5,7 @@ public class Rectangle extends TwoDimensionalShape{
    private double width;
    
    private Rectangle(){
+   
       this.height=0;
       this.width=0;
    }

@@ -1,5 +1,6 @@
 package shape;
 abstract public class TwoDimensionalShape {
-   abstract public double area();
-   abstract public double perimeter();
+ 
+     abstract public double getArea();
+   abstract public double getPerimeter();
 }
