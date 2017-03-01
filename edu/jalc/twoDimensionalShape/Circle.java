@@ -1,5 +1,4 @@
-package shape;
-
+package edu.jalc.twoDimensionalShape;
  public class Circle extends Ellipse{
    private double radius;
    

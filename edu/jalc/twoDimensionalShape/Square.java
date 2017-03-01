@@ -1,4 +1,4 @@
-package shape;
+package edu.jalc.twoDimensionalShape;
 
  public class Square extends Rectangle{
    private double side;

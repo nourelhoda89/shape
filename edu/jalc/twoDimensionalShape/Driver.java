@@ -1,4 +1,4 @@
-package shape;
+package edu.jalc.twoDimensionalShape;
 
 /*The driver should demonstrate use of polymorphism by comparing 
 different object instances. Your driver should have at least one 

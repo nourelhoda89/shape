@@ -1,4 +1,4 @@
-package shape;
+package edu.jalc.twoDimensionalShape;
 
 public class Rectangle extends TwoDimensionalShape{
    private double height;

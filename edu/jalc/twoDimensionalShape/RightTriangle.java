@@ -1,5 +1,4 @@
-package shape;
-//import java.lang.*;
+package edu.jalc.twoDimensionalShape;
 
 public class RightTriangle extends Triangle{
    private double height;
