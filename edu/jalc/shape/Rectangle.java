@@ -29,6 +29,12 @@ public class Rectangle extends TwoDimensionalShape{
    public boolean equals(TwoDimensionalShape shape1,TwoDimensionalShape shape2){
       return super.equals(shape1, shape2);
    }
+   /*//if I chose to use "this" in the super equal method I can do the following here:
+   //which limit the comparasion to any shape with rectangle.
+    public boolean equals(TwoDimensionalShape shape){
+      return super.equals(shape);
+   }*/
+   
    //just to check will delete later
    public static void main(String[] args){
       Rectangle rectangle = new Rectangle(5,5);

@@ -28,7 +28,6 @@ public class Triangle extends TwoDimensionalShape{
 
    public String toString(){
       return "The area of the triangle is " +getArea() +"\nThe Perimeter of the triangle is "+getPerimeter();
-   
    }
    public boolean equals(TwoDimensionalShape shape1,TwoDimensionalShape shape2){
       return super.equals(shape1, shape2);

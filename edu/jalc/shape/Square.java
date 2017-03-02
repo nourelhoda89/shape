@@ -13,15 +13,15 @@ public class Square extends Rectangle{
    public String toString(){
       return "The area of the square is " +getArea() +"\nThe peremeter of the square is " +getPerimeter();
    }
-   public boolean equals(TwoDimensionalShape shape1,TwoDimensionalShape shape2){
-      return super.equals(shape1, shape2);
+   public boolean equals(TwoDimensionalShape shape1){
+      return super.equals(shape1);
    }
    //just to check will delete later
    public static void main(String[] args){
       Square square = new Square(5);
       System.out.println(square.toString());
       Rectangle rectangle = new Rectangle(5,5);
-      System.out.println(square.equals(square,rectangle));
+      System.out.println(square.equals(square));
    
    }
 
