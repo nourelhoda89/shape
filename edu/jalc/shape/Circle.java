@@ -13,12 +13,6 @@ public class Circle extends Ellipse{
    public String toString(){
       return "The area of the Circle is " +getArea() +"\nThe circumference of the Circle is " +getPerimeter();
    }
-   public boolean equals(TwoDimensionalShape shape){
-      if(shape.getArea()==this.getArea()){
-         return true;}
-      else
-         return false;
-   }
    public boolean equals(TwoDimensionalShape shape1,TwoDimensionalShape shape2){
       return super.equals(shape1, shape2);
    }
