@@ -13,10 +13,13 @@ public class RightTriangle extends Triangle{
       this.side=Math.sqrt((height*height)+(base*base));
    }
    public RightTriangle(double height, double base,double side){
-          super(height,base,side,height);
+      super(height,base,side,height);
    }
-    public String toString(){
+   public String toString(){
       return "The area of the right triangle is " +getArea() +"\nThe peremeter of the right triangle is " +getPerimeter();
+   }
+   public boolean equals(TwoDimensionalShape shape1,TwoDimensionalShape shape2){
+      return super.equals(shape1, shape2);
    }
    //just to check will delete later
    public static void main(String[] args){

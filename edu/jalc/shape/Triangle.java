@@ -20,21 +20,18 @@ public class Triangle extends TwoDimensionalShape{
    }
    public double getArea(){
       return (height*base/2);
-
+   
    }
    public double getPerimeter(){
       return base+side1+side2;
    }
 
- // human readable toString method detailing their properties.
    public String toString(){
       return "The area of the triangle is " +getArea() +"\nThe Perimeter of the triangle is "+getPerimeter();
-
+   
    }
- //equals method,must be able to compare any TwoDimensionalShape
- //to see if their getAreas are equal
-   public boolean equals(){
-   return false;
+   public boolean equals(TwoDimensionalShape shape1,TwoDimensionalShape shape2){
+      return super.equals(shape1, shape2);
    }
 
    //just to check will delete later
