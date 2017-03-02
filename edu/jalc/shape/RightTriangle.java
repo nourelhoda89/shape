@@ -1,11 +1,11 @@
-package edu.jalc.twoDimensionalShape;
+package edu.jalc.shape;
 
 public class RightTriangle extends Triangle{
    private double height;
    private double base;
    private double side;
-   
-   
+
+
    private RightTriangle(){
       super(0.0,0.0,0.0,0.0);
       this.height=0.0;
@@ -21,7 +21,7 @@ public class RightTriangle extends Triangle{
    //just to check will delete later
    public static void main(String[] args){
       RightTriangle rightTriangle = new RightTriangle(1.0,1.0,1.0);
-      System.out.println(rightTriangle.toString()); 
+      System.out.println(rightTriangle.toString());
    }
-   
+
 }

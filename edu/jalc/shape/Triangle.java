@@ -1,11 +1,11 @@
-package edu.jalc.twoDimensionalShape;
+package edu.jalc.shape;
 
 public class Triangle extends TwoDimensionalShape{
    private double height;
    private double base;
    private double side1;
    private double side2;
-   
+
    private Triangle(){
       this.height=0;
       this.base=0;
@@ -20,18 +20,18 @@ public class Triangle extends TwoDimensionalShape{
    }
    public double getArea(){
       return (height*base/2);
-   
+
    }
    public double getPerimeter(){
       return base+side1+side2;
    }
-   
+
  // human readable toString method detailing their properties.
    public String toString(){
       return "The area of the triangle is " +getArea() +"\nThe Perimeter of the triangle is "+getPerimeter();
-   
+
    }
- //equals method,must be able to compare any TwoDimensionalShape 
+ //equals method,must be able to compare any TwoDimensionalShape
  //to see if their getAreas are equal
    public boolean equals(){
    return false;
