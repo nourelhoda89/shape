@@ -1,4 +1,7 @@
-package edu.jalc.shape;
+package edu.jalc.shape.infinitsidedshape;
+
+import  edu.jalc.shape.twodimensionalshape.TwoDimensionalShape;
+
 
 public class Circle extends Ellipse{
    private double radius;
@@ -13,13 +16,4 @@ public class Circle extends Ellipse{
    public String toString(){
       return "The area of the Circle is " +getArea() +"\nThe circumference of the Circle is " +getPerimeter();
    }
-   public boolean equals(TwoDimensionalShape shape1,TwoDimensionalShape shape2){
-      return super.equals(shape1, shape2);
-   }
-   //just to check will delete later
-   public static void main(String[] args){
-      Circle circle = new Circle(5);
-      System.out.println(circle.toString());
-   }
-
 }
