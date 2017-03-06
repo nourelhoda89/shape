@@ -12,11 +12,11 @@ public final class Circle extends Ellipse{
       super(radius,radius);
       this.radius = radius;
    }
-   public  double circumference(){
+   public  double getCircumference(){
       return 2*Math.PI*radius;
    }
    public String toString(){
-      return "The area of the Circle is " +getArea() +"\nThe circumference of the Circle is " +circumference();
+      return "The area of the Circle is " +getArea() +"\nThe circumference of the Circle is " +getCircumference();
    }
     public final Circle toCircle(TwoDimensionalShape shape){
       double radius=Math.sqrt(shape.getArea()/Math.PI);

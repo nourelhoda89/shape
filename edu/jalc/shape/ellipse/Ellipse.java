@@ -1,6 +1,5 @@
 package edu.jalc.shape.ellipse;
 
-import java.lang.*;
 import  edu.jalc.shape.twodimensionalshape.TwoDimensionalShape;
 
 public class Ellipse extends TwoDimensionalShape{
@@ -20,10 +19,10 @@ public class Ellipse extends TwoDimensionalShape{
       return  Math.PI*minorAxis*majorAxis;
    
    }
-   public double circumference(){
+   public double getCircumference(){
       return 2*Math.PI * Math.sqrt((minorAxis + majorAxis)/2);
    }
    public String toString(){
-      return "The area of the  Ellipse is " +getArea() +"\nThe circumference of the Ellipse is "+circumference();
+      return "The area of the  Ellipse is " +getArea() +"\nThe circumference of the Ellipse is "+getCircumference();
    }
 }

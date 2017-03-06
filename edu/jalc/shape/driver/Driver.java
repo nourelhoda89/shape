@@ -1,6 +1,5 @@
 package edu.jalc.shape.driver;
 
-import java.util.*;
 import edu.jalc.shape.twodimensionalshape.TwoDimensionalShape;
 import edu.jalc.shape.rectangle.Rectangle;
 import edu.jalc.shape.rectangle.Square;
@@ -11,18 +10,14 @@ import edu.jalc.shape.righttriangle.RightTriangle;
 public class Driver{
 
    public static void main(String... args){
-      String shape1=null ,shape2=null;
-      Scanner sc = new Scanner(System.in);
-      
+         
       Rectangle rectangle = new Rectangle(10,2);
-      Square square = new Square(4
-      );
+      Square square = new Square(4);
       RightTriangle rightTriangle = new RightTriangle(10,4);
       Ellipse ellipse = new Ellipse(4,4);
       Circle circle = new Circle(4);
       
       System.out.println(ellipse.toString());
-   
       System.out.println("\n"+circle.toString());
       System.out.println("\n"+rectangle.toString());
       System.out.println("\n"+square.toString());
