@@ -13,10 +13,10 @@ public class Rectangle extends TwoDimensionalShape{
     this.length=length;
     this.width =width;  
    }
-   public double getArea(){
+   public final double getArea(){
       return length*width;
    }
-   public double getPerimeter(){
+   public final double getPerimeter(){
       return 2*(length+width);
    }
    public String toString(){

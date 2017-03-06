@@ -1,6 +1,7 @@
 package edu.jalc.shape.rectangle;
+import edu.jalc.shape.twodimensionalshape.TwoDimensionalShape;
 
-public class Square extends Rectangle{
+public final class Square extends Rectangle{
 
    private Square(){
       super(0.0,0.0);
@@ -8,7 +9,11 @@ public class Square extends Rectangle{
    public Square(double length){
       super(length,length);
    }
-   public String toString(){
+   public final String toString(){
       return "The area of the square is " +getArea() +"\nThe peremeter of the square is " +getPerimeter();
+   }
+   public final Square toSquare(TwoDimensionalShape shape){
+      double length=Math.sqrt(shape.getArea());
+      return new Square(length);
    }
 }

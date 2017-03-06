@@ -14,28 +14,38 @@ public class Driver{
       String shape1=null ,shape2=null;
       Scanner sc = new Scanner(System.in);
       
-      Rectangle rectangle = new Rectangle(4,4);
-      Square square = new Square(4);
+      Rectangle rectangle = new Rectangle(10,2);
+      Square square = new Square(4
+      );
       RightTriangle rightTriangle = new RightTriangle(10,4);
-      Ellipse ellipse = new Ellipse(2,4);
+      Ellipse ellipse = new Ellipse(4,4);
       Circle circle = new Circle(4);
       
       System.out.println(ellipse.toString());
-      System.out.println();
-      System.out.println(circle.toString());
-      System.out.println();
-      System.out.println(rectangle.toString());
-      System.out.println();
-      System.out.println(square.toString());
-      System.out.println();
-      System.out.println(rightTriangle.toString());
-      System.out.println();
+   
+      System.out.println("\n"+circle.toString());
+      System.out.println("\n"+rectangle.toString());
+      System.out.println("\n"+square.toString());
+      System.out.println("\n"+rightTriangle.toString());
+     
       
-       
-      System.out.println(rectangle.equals(rightTriangle));
+      System.out.println("\n"+ellipse.equals(circle));
+      System.out.println(circle.equals(rectangle));
       System.out.println(square.equals(rectangle));
-      System.out.println(rightTriangle.equals(square));
-      System.out.println(ellipse.equals(circle));
-      System.out.println(circle.equals(square));
+      System.out.println(rightTriangle.equals(ellipse));
+      System.out.println(rectangle.equals(rightTriangle));
+      
+      System.out.println("\n"+circle.toCircle(rectangle));
+      System.out.println("\n"+circle.toCircle(square));
+      System.out.println("\n"+circle.toCircle(rightTriangle));
+      System.out.println("\n"+circle.toCircle(ellipse));
+      
+      System.out.println("\n"+square.toSquare(rectangle));
+      System.out.println("\n"+square.toSquare(circle));
+      System.out.println("\n"+square.toSquare(rightTriangle));
+      System.out.println("\n"+square.toSquare(ellipse));
+   
+   
+   
    }
 }

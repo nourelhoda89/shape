@@ -2,7 +2,7 @@ package edu.jalc.shape.righttriangle;
 
 import  edu.jalc.shape.twodimensionalshape.TwoDimensionalShape;
 
-public class RightTriangle extends TwoDimensionalShape{
+public final class RightTriangle extends TwoDimensionalShape{
 
    private final double height; 
    private final double base;
@@ -14,10 +14,10 @@ public class RightTriangle extends TwoDimensionalShape{
       this.height=height;
       this.base=base;
    }
-   public double getArea(){
+   public final double getArea(){
       return(height*base)/2;
    }
-   public double getPerimeter(){
+   public final double getPerimeter(){
       return height+ base + Math.sqrt(height*height + base*base);
    }
 

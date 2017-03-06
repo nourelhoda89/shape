@@ -1,6 +1,7 @@
 package edu.jalc.shape.ellipse;
+import edu.jalc.shape.twodimensionalshape.TwoDimensionalShape;
 
-public class Circle extends Ellipse{
+public final class Circle extends Ellipse{
    private double radius;
 
    private Circle(){
@@ -11,10 +12,14 @@ public class Circle extends Ellipse{
       super(radius,radius);
       this.radius = radius;
    }
-   public double circumference(){
+   public  double circumference(){
       return 2*Math.PI*radius;
    }
    public String toString(){
       return "The area of the Circle is " +getArea() +"\nThe circumference of the Circle is " +circumference();
+   }
+    public final Circle toCircle(TwoDimensionalShape shape){
+      double radius=Math.sqrt(shape.getArea()/Math.PI);
+      return new Circle(radius);
    }
 }
