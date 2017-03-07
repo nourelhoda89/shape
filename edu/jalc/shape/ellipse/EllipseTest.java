@@ -17,7 +17,8 @@ class EllipseTest{
    public void testToString(){
       System.out.println("Testing Ellipse :: ToString");
       Ellipse ellipse = new Ellipse(4,5);
-      assert(ellipse.toString().equals("The area of the  Ellipse is " +ellipse.getArea() +"\nThe circumference of the Ellipse is "+ellipse.getCircumference()));
+      assert(ellipse.toString().equals("The area of the  Ellipse is " +ellipse.getArea() 
+                                      +"\nThe circumference of the Ellipse is "+ellipse.getCircumference()));
    } 
    
    public static void main(String[] args){
@@ -25,6 +26,6 @@ class EllipseTest{
       test.testArea();
       test.testCircumference();
       test.testToString();
-      System.out.println("All ellipse test completed");
+      System.out.println("All Ellipse tests completed");
    }
 }

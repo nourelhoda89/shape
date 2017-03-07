@@ -11,7 +11,7 @@ class RightTriangleTest{
    public void testPerimeter(){
       System.out.println("Testing RightTriangle :: getPerimeter");
       RightTriangle rightTriangle = new RightTriangle(10.0,4.0);
-      assert(rightTriangle.getPerimeter() ==10.0 + 4.0+ Math.sqrt(10.0*10.0 + 4.0*4.0));
+      assert(rightTriangle.getPerimeter() == 10.0 + 4.0+ Math.hypot(10.0,4.0));
    }
    
    public void testToString(){

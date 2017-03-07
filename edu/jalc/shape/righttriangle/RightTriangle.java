@@ -18,7 +18,7 @@ public final class RightTriangle extends TwoDimensionalShape{
       return(height*base)/2;
    }
    public final double getPerimeter(){
-      return height+ base + Math.sqrt(height*height + base*base);
+      return height+ base +  Math.hypot(height,base);
    }
 
    public String toString(){

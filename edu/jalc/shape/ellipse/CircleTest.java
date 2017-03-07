@@ -17,7 +17,8 @@ class CircleTest{
    public void testToString(){
       System.out.println("Testing Circle :: toString");
       Circle circle = new Circle(7);
-      assert(circle.toString().equals("The area of the Circle is " +circle.getArea() +"\nThe circumference of the Circle is " +circle.getCircumference()));
+      assert(circle.toString().equals("The area of the Circle is " +circle.getArea() 
+                                      +"\nThe circumference of the Circle is " +circle.getCircumference()));
    } 
    
    public static void main(String[] args){
@@ -25,6 +26,6 @@ class CircleTest{
       test.testArea();
       test.testCircumference();
       test.testToString();
-      System.out.println("All circle tests completed");
+      System.out.println("All Circle tests completed");
    }
 }
