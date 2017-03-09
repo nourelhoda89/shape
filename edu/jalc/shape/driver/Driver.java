@@ -30,15 +30,15 @@ public class Driver{
       System.out.println(rightTriangle.equals(ellipse));
       System.out.println(rectangle.equals(rightTriangle));
       
-      System.out.println("\n"+circle.toCircle(rectangle));
-      System.out.println("\n"+circle.toCircle(square));
-      System.out.println("\n"+circle.toCircle(rightTriangle));
-      System.out.println("\n"+circle.toCircle(ellipse));
+      System.out.println("\n"+Circle.toCircle(rectangle));
+      System.out.println("\n"+Circle.toCircle(square));
+      System.out.println("\n"+Circle.toCircle(rightTriangle));
+      System.out.println("\n"+Circle.toCircle(ellipse));
       
-      System.out.println("\n"+square.toSquare(rectangle));
-      System.out.println("\n"+square.toSquare(circle));
-      System.out.println("\n"+square.toSquare(rightTriangle));
-      System.out.println("\n"+square.toSquare(ellipse));
+      System.out.println("\n"+Square.toSquare(rectangle));
+      System.out.println("\n"+Square.toSquare(circle));
+      System.out.println("\n"+Square.toSquare(rightTriangle));
+      System.out.println("\n"+Square.toSquare(ellipse));
    
    
    
