@@ -4,6 +4,7 @@ import edu.jalc.shape.twodimensionalshape.TwoDimensionalShape;
 import edu.jalc.shape.rectangle.Rectangle;
 import edu.jalc.shape.rectangle.Square;
 import edu.jalc.shape.ellipse.Circle;
+import edu.jalc.shape.ellipse.ToCircle;
 import edu.jalc.shape.ellipse.Ellipse;
 import edu.jalc.shape.righttriangle.RightTriangle;
 
@@ -30,16 +31,16 @@ public class Driver{
       System.out.println(rightTriangle.equals(ellipse));
       System.out.println(rectangle.equals(rightTriangle));
       
-      System.out.println("\n"+circle.toCircle(rectangle));
-      System.out.println("\n"+circle.toCircle(square));
-      System.out.println("\n"+circle.toCircle(rightTriangle));
-      System.out.println("\n"+circle.toCircle(ellipse));
+      System.out.println("\n"+ToCircle.getInstance().toCircle(rectangle));
+      System.out.println("\n"+ToCircle.getInstance().toCircle(square));
+      System.out.println("\n"+ToCircle.getInstance().toCircle(rightTriangle));
+      System.out.println("\n"+ToCircle.getInstance().toCircle(ellipse));
       
-      System.out.println("\n"+square.toSquare(rectangle));
+     /* System.out.println("\n"+square.toSquare(rectangle));
       System.out.println("\n"+square.toSquare(circle));
       System.out.println("\n"+square.toSquare(rightTriangle));
       System.out.println("\n"+square.toSquare(ellipse));
-   
+   */
    
    
    }

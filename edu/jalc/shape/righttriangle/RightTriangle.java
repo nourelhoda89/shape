@@ -8,7 +8,7 @@ public final class RightTriangle extends TwoDimensionalShape{
    private final double base;
    
    private RightTriangle(){
-      this.height=this.base=0;
+      this.height=this.base=0.0;
    }
    public RightTriangle(double height,double base){
       this.height=height;

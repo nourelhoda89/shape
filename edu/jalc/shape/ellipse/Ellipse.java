@@ -8,8 +8,8 @@ public class Ellipse extends TwoDimensionalShape{
 
    private  Ellipse(){
    
-      this. minorAxis=0;
-      this.majorAxis=0;
+      this. minorAxis=0.0;
+      this.majorAxis=0.0;
    }
    public  Ellipse(double minorAxis,double majorAxis){
       this.minorAxis=minorAxis;
