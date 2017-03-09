@@ -14,7 +14,7 @@ private static ToSquare instance = new ToSquare();
       return instance;
    }
   public Square toSquare(TwoDimensionalShape shape){
-      double length=Math.sqrt(shape.getArea()/Math.PI);
+      double length=Math.sqrt(shape.getArea());
       return new Square(length);
    }
 }

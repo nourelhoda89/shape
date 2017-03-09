@@ -1,7 +1,7 @@
 package edu.jalc.shape.ellipse;
 
 public  class Circle extends Ellipse{
-   private double radius;
+  private double radius;
 
    private Circle(){
       super(0.0,0.0);
